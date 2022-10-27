@@ -1,20 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HTML-CSS-and-Bootstrap-Skills-Based-Assessment</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
-  <title>Your Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Welcome to Johnjc's Home Page!</h1>
-    <button id="clap-button" class="button">👏</button>
-  </div>
+  
+    <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-md navbar-light bg-warning">
+    <h1 class="bg-warning">BSM Website</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-dark" href="https://usa.generation.org/" target="_blank">Link to Generation USA Website</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.codecademy.com/" target="_blank">Link to Codecademy's Website</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+  <main class="padding">
+    <table class="table table-bordered">
+      <thead>
+        <th scope="col">BSM Name</th>
+        <th scope="col">BSM Description</th>
+        <th scope="col">Behavioral Mind or Skillset?</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personal Responsibility</td>
+          <td>Owning the actions required for my success</td>
+          <td>Mindset</td>
+        </tr>
+        <tr>
+          <td>Growth Mindset</td>
+          <td>I can learn new things</td>
+          <td>Mindset</td>
+        </tr>
+        <tr>
+          <td>Future Orientation</td>
+          <td>Time perspective that is focused on the future, especially on how to achieve one’s desired goals</td>
+          <td>Mindset</td>
+        </tr>
+        <tr>
+          <td>Persistence</td>
+          <td></td>
+          <td>Mindset</td>
+        </tr>
+        <tr>
+          <td>Communication</td>
+          <td></td>
+          <td>Behavioral Skill</td>
+        </tr>
+        <tr>
+          <td>Orientation to Detail</td>
+          <td></td>
+          <td>Behavioral Skill</td>
+        </tr>
+        <tr>
+          <td>Teamwork</td>
+          <td></td>
+          <td>Behavioral Skill</td>
+        </tr>
+        <tr>
+          <td>Proactiveness</td>
+          <td></td>
+          <td>Behavioral Skill</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  
+    <h3>Three Areas of Curriculum Focus</h3>
+
+    <div class="parent-container">
+      <div class="child-container">
+        <div class="item">
+          <p>BSMs</p>
+        </div>
+        <div class="item">
+          <p>Employment Essentials</p>
+        </div>
+        <div class="item">
+          <p>Technical Skills</p>
+        </div>
+      </div>
+    </div>
+   
+    
+    <h3>Want to learn more about our BSMs?</h3>
+    <form action="submission.html" method="POST">
+      <label for="first-name">Please enter your first name:</label>
+      <input type="text" name="first-name" id="first-name" value="First Name">
+      <br>
+      <label for="last-name">Please enter your last name:</label>
+      <input type="text" name="last-name" id="last-name" value="Last Name">
+      <br>
+      <input class="submit" type="submit" value="Click to Submit Your Information">
+    </form>
+    <img src="https://www.generation.org/wp-content/uploads/2020/06/you-employed-home-square2-2x.png" alt="You are employed"/>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
 
 </html>
